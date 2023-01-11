@@ -3,15 +3,11 @@
 }
 
 .product__details .product__content {
-    padding: 40px;
+    padding: 50px;
     height: 100%;
     justify-content: space-between;
 }
 
 .product__details .product__content h1 {
     width: 80%;
-}
-
-.product__details .product__content p {
-    width: 90%;
 }
