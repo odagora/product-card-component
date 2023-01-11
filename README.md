@@ -60,6 +60,24 @@ Use of CSS Grid responsively without the need of Media Queries
     overflow: hidden;
 }
 ```
+Use of accesibility text for screen readers
+```html
+<p class="product__price">
+  <span class="visually-hidden">Current price:</span>
+  $149.99
+</p>
+```
+```css
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+```
 ### Continued development
 
 - Use of preprocessors like SASS for styling
